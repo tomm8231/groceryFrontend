@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery Delivery System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Grocery Delivery System</h1>
+
+        <h2 class="mt-4">List of Products</h2>
+        <ul id="product-list" class="list-group"></ul>
+        <button class="btn btn-primary" id="load-all-items">Se all varer</button>
+
+        <h2 class="mt-4">Add a Product</h2>
+        <form id="add-product-form">
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <input type="text" id="name-input" class="form-control" placeholder="Product Name" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input type="number" id="price-input" class="form-control" placeholder="Product Price" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input type="number" id="weight-input" class="form-control" placeholder="Product Weight" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
+
+        <h2 class="mt-4">Find a Product</h2>
+        <form id="find-product-form">
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <input type="text" id="search-input" class="form-control" placeholder="Search by Product Name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
